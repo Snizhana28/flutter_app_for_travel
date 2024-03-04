@@ -1,0 +1,28 @@
+name: flutter_app_for_travel
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.0-221.0.dev <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.6.6
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.9
+  iconsax: ^0.0.8
+  dropdown_textfield: ^1.0.8
+  blurrycontainer: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/sp_icon.svg
+    - assets/icons/location_icon.svg
