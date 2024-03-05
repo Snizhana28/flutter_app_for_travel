@@ -20,9 +20,13 @@ class HomeCardList extends StatelessWidget {
           for (var place in places)
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 11),
-              child: AppCard(
-                place: place,
-                onPressed: () => Get.toNamed(AppRouter.about, arguments: place),
+              child: Hero(
+                tag: place.id,
+                child: AppCard(
+                  place: place,
+                  onPressed: () =>
+                      Get.toNamed(AppRouter.about, arguments: place),
+                ),
               ),
             ),
         ],
